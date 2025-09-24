@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio 2 คน</title>
+  <link rel="stylesheet" href="rush.css">
+</head>
+<body>
+  <div class="app">
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="logo">My Portfolio</div>
+      <ul class="nav-links hidden">
+        <li><a href="#" class="nav-home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- หน้าแรก -->
+    <main id="home" class="home">
+      <div class="intro">
+        <h1>Welcome to Our Portfolio</h1>
+        <p>เลือกดูผลงานของเราได้จากด้านล่าง</p>
+      </div>
+      <div class="avatar-container">
+        <div class="avatar" data-id="person1">
+          <img src="eren.jpg" alt="Jirat Lorvitayapan <Keng>">
+          <div class="label">Jirat Lorvitayapan <Keng></div>
+        </div>
+        <div class="avatar" data-id="person2">
+          <img src="mikasa.jpg" alt="Atthakorn Kowing <Premier>">
+          <div class="label">Atthakorn Kowing <Premier></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- หน้าโปรไฟล์ -->
+    <section id="profile" class="profile">
+      <div class="profile-card">
+        <div class="profile-photo"></div>
+        <h2 class="profile-name">ชื่อ</h2>
+        <p class="profile-role">ตำแหน่ง</p>
+        
+        <section id="about">
+          <h3>About</h3>
+          <p class="about-text"></p>
+        </section>
+
+        <section id="skill">
+          <h3>Skill</h3>
+          <div class="meta"></div>
+        </section>
+
+        <section id="work">
+          <h3>Work</h3>
+          <div class="work-list"></div>
+        </section>
+
+        <section id="contact">
+          <h3>Contact</h3>
+          <div class="contact-links"></div>
+        </section>
+      </div>
+    </section>
+
+  </div>
+  <script src="rush.js"></script>
+</body>
+</html>

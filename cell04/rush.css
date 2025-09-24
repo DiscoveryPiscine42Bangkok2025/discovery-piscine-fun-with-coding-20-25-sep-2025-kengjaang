@@ -1,0 +1,98 @@
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+/* Body & Background */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(270deg, #0f172a, #1e293b, #0f172a);
+  background-size: 600% 600%;
+  animation: gradientBG 20s ease infinite;
+  color: #e2e8f0;
+  line-height:1.6;
+  min-height: 100vh;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Navbar */
+.navbar {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 40px;
+  background: rgba(255,255,255,0.05);
+  position: sticky;
+  top:0;
+  z-index:10;
+  backdrop-filter: blur(10px);
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+.logo { font-size:22px; font-weight:bold; color:#38bdf8; }
+.nav-links { list-style:none; display:flex; gap:24px; transition:.6s; }
+.nav-links.hidden { opacity:0; pointer-events:none; }
+.nav-links a { color:#e2e8f0; text-decoration:none; font-weight:500; }
+.nav-links a:hover { color:#38bdf8; }
+
+/* Home */
+.home { text-align:center; padding:60px 20px; }
+.home h1 { font-size:36px; color:#38bdf8; margin-bottom:10px; }
+.home p { font-size:18px; margin-bottom:40px; color:#94a3b8; }
+.avatar-container { display:flex; justify-content:center; gap:60px; }
+
+/* Avatar */
+.avatar {
+  width:180px; height:180px; border-radius:50%;
+  cursor:pointer; position:relative; overflow:hidden;
+  box-shadow:0 8px 20px rgba(0,0,0,.5);
+  display:flex; align-items:flex-end; justify-content:center;
+  transition: transform .3s, box-shadow .3s;
+}
+.avatar img { width:100%; height:100%; object-fit:cover; display:block; }
+.avatar:hover { transform: scale(1.08); box-shadow:0 12px 28px rgba(0, 255, 255, 0.5); }
+.label {
+  background: rgba(0,0,0,.6); color:#fff; width:100%;
+  text-align:center; padding:12px; border-bottom-left-radius:50%; border-bottom-right-radius:50%;
+  font-weight:bold; position:absolute; bottom:0;
+}
+
+/* Profile */
+.profile { display:none; padding:40px 20px; }
+.profile-card {
+  max-width:800px; margin:auto; background:rgba(255,255,255,.05);
+  border-radius:20px; padding:32px; text-align:center;
+}
+.profile-photo {
+  width:140px; height:140px; border-radius:50%; margin:0 auto 16px;
+  overflow:hidden; background:gray;
+}
+.profile-photo img { width:100%; height:100%; object-fit:cover; border-radius:50%; }
+
+.profile-name { font-size:26px; margin-bottom:8px; }
+.profile-role { opacity:.8; margin-bottom:24px; }
+
+/* Sections */
+.profile-card section { margin:60px 0; text-align:left; }
+.profile-card h3 { font-size:20px; margin-bottom:10px; color:#38bdf8; }
+.about-text { font-size:16px; line-height:1.8; text-align:justify; color:#cbd5e1; }
+
+/* Skills */
+.meta { display:flex; gap:12px; flex-wrap:wrap; }
+.meta span { background:rgba(56,189,248,.25); padding:8px 16px; border-radius:24px; }
+
+/* Work */
+.work-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; }
+.work-item { background:rgba(255,255,255,.05); padding:20px; border-radius:12px; }
+.work-item h4 { color:#fbbf24; margin-bottom:6px; }
+
+/* Contact */
+.contact-links { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:16px; }
+.contact-links a {
+  text-align:center; padding:14px; background:rgba(56,189,248,.15);
+  border-radius:8px; color:#38bdf8; text-decoration:none; font-weight:500;
+}
+.contact-links a:hover { background:#38bdf8; color:#0f172a; }
+
