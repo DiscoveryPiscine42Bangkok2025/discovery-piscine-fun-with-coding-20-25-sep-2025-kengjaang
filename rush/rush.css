@@ -52,7 +52,7 @@ body {
   transition: transform .3s, box-shadow .3s;
 }
 .avatar img { width:100%; height:100%; object-fit:cover; display:block; }
-.avatar:hover { transform: scale(1.08); box-shadow:0 12px 28px rgba(0, 255, 255, 0.5); }
+.avatar:hover { transform: scale(1.08); box-shadow:0 12px 28px rgba(0,0,0,.6); }
 .label {
   background: rgba(0,0,0,.6); color:#fff; width:100%;
   text-align:center; padding:12px; border-bottom-left-radius:50%; border-bottom-right-radius:50%;
@@ -95,4 +95,3 @@ body {
   border-radius:8px; color:#38bdf8; text-decoration:none; font-weight:500;
 }
 .contact-links a:hover { background:#38bdf8; color:#0f172a; }
-
